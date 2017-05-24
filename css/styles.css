@@ -1,23 +1,20 @@
-.column {
-  width: 450px;
-  float: left;
-  background-color: #c2c3c4;
+body {
+  background-color: black;
 }
 
-.column2 {
-  width: 450px;
+h1 {
+  color: white;
+}
+
+.column {
+  width: 30%;
   float: left;
   background-color: #9a79b2;
-}
-
-.column3 {
-  width: 450px;
-  float: left;
-  background-color: #79b27c;
+  border: 5px solid white;
 }
 
 #before, #during, #after {
-  width:450px;
+  width:100%;
 }
 
 div h2 {
@@ -31,4 +28,39 @@ div p {
 
 h1 #special {
   color: red;
+}
+
+/* This is for tablets */
+@media screen and (max-width: 1000px) and (min-width: 551px) {
+  body {
+    background-color: #333;
+    color: white;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* This is for small screens */
+@media screen and (max-width: 550px) and (min-width: 300px) {
+  body {
+    background-color: #444;
+  }
+
+  #before, #during, #after {
+    width:360px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .column {
+    width: 360px;
+    float: left;
+    background-color: #9a79b2;
+    border: 5px solid white;
+  }
+
 }
