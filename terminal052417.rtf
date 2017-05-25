@@ -1,0 +1,1232 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red180\green36\blue25;\red47\green180\blue29;\red159\green160\blue28;
+}
+\margl1440\margr1440\vieww29300\viewh11820\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \CocoaLigature0 Last login: Wed May 24 07:55:53 on console\
+epicodus-3:~ Guest$ atom .pairs\
+epicodus-3:~ Guest$ mkdir Desktop/RedVelvet\
+epicodus-3:~ Guest$ cd Desktop/RedVelvet/\
+epicodus-3:RedVelvet Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/RedVelvet/.git/\
+epicodus-3:RedVelvet Guest$ atom .\
+epicodus-3:RedVelvet Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:RedVelvet Guest$ touch index.html\
+epicodus-3:RedVelvet Guest$ mkdir css\
+epicodus-3:RedVelvet Guest$ mkdir img\
+epicodus-3:RedVelvet Guest$ cd css\
+epicodus-3:css Guest$ touch styles.css\
+epicodus-3:css Guest$ cd ...\
+-bash: cd: ...: No such file or directory\
+epicodus-3:css Guest$ cd ..\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 css/\cf0 \
+	\cf2 img/\cf0 \
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:RedVelvet Guest$ git add .\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf3 new file:   css/styles.css\cf0 \
+	\cf3 new file:   img/cakes.jpg\cf0 \
+	\cf3 new file:   img/candy.jpg\cf0 \
+	\cf3 new file:   img/raspberry.jpg\cf0 \
+	\cf3 new file:   img/strawberry.jpg\cf0 \
+	\cf3 new file:   index.html\cf0 \
+\
+epicodus-3:RedVelvet Guest$ git-pair-commit -m "initial website setup"\
+Committing under steve@\
+[master (root-commit) 16da9c3] initial website setup\
+ 6 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 css/styles.css\
+ create mode 100644 img/cakes.jpg\
+ create mode 100644 img/candy.jpg\
+ create mode 100644 img/raspberry.jpg\
+ create mode 100644 img/strawberry.jpg\
+ create mode 100644 index.html\
+epicodus-3:RedVelvet Guest$ git remote add https://github.com/Epicodus-SZ/RedVelvet.git\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=<push|fetch>]\
+                          set up remote as a mirror to push to or fetch from\
+\
+epicodus-3:RedVelvet Guest$ git remote add sz https://github.com/Epicodus-SZ/RedVelvet.git\
+epicodus-3:RedVelvet Guest$ git remote -v\
+sz	https://github.com/Epicodus-SZ/RedVelvet.git (fetch)\
+sz	https://github.com/Epicodus-SZ/RedVelvet.git (push)\
+epicodus-3:RedVelvet Guest$ git remote add lh https://github.com/hammmay/RedVelvet.git\
+epicodus-3:RedVelvet Guest$ git remote -v\
+lh	https://github.com/hammmay/RedVelvet.git (fetch)\
+lh	https://github.com/hammmay/RedVelvet.git (push)\
+sz	https://github.com/Epicodus-SZ/RedVelvet.git (fetch)\
+sz	https://github.com/Epicodus-SZ/RedVelvet.git (push)\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+nothing to commit, working directory clean\
+epicodus-3:RedVelvet Guest$ git push lh\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream lh master\
+\
+epicodus-3:RedVelvet Guest$ git push --set-upstream lh master\
+Username for 'https://github.com': hammay\
+Password for 'https://hammay@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/hammmay/RedVelvet.git/'\
+epicodus-3:RedVelvet Guest$ git push --set-upstream lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 9, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (9/9), 2.03 MiB | 202.00 KiB/s, done.\
+Total 9 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/RedVelvet.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from lh.\
+epicodus-3:RedVelvet Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 9, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (9/9), 2.03 MiB | 1.28 MiB/s, done.\
+Total 9 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/RedVelvet.git\
+ * [new branch]      master -> master\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   index.html\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:RedVelvet Guest$ git add .\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   index.html\cf0 \
+\
+epicodus-3:RedVelvet Guest$ git-pair-commit -m "add cupcake photos and text copy"\
+Committing under laura@\
+[master 5cc0a08] add cupcake photos and text copy\
+ 1 file changed, 25 insertions(+)\
+epicodus-3:RedVelvet Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 619 bytes | 0 bytes/s, done.\
+Total 3 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/RedVelvet.git\
+   16da9c3..5cc0a08  master -> master\
+epicodus-3:RedVelvet Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 619 bytes | 0 bytes/s, done.\
+Total 3 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/RedVelvet.git\
+   16da9c3..5cc0a08  master -> master\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   css/styles.css\cf0 \
+	\cf2 modified:   index.html\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:RedVelvet Guest$ git add .\
+epicodus-3:RedVelvet Guest$ git-pair-commit -m "add css classes"\
+Committing under laura@\
+[master d75c252] add css classes\
+ 2 files changed, 28 insertions(+), 4 deletions(-)\
+epicodus-3:RedVelvet Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 617 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/RedVelvet.git\
+   5cc0a08..d75c252  master -> master\
+epicodus-3:RedVelvet Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 617 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/RedVelvet.git\
+   5cc0a08..d75c252  master -> master\
+epicodus-3:RedVelvet Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir BoringLecture\
+epicodus-3:Desktop Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/.git/\
+epicodus-3:Desktop Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:Desktop Guest$ git remote add sz https://github.com/Epicodus-SZ/BoringLecture.git\
+epicodus-3:Desktop Guest$ git remote add lh https://github.com/hammmay/BoringLecture.git\
+epicodus-3:Desktop Guest$ git remote -v\
+lh	https://github.com/hammmay/BoringLecture.git (fetch)\
+lh	https://github.com/hammmay/BoringLecture.git (push)\
+sz	https://github.com/Epicodus-SZ/BoringLecture.git (fetch)\
+sz	https://github.com/Epicodus-SZ/BoringLecture.git (push)\
+epicodus-3:Desktop Guest$ cd BoringLecture/\
+epicodus-3:BoringLecture Guest$ atom .\
+epicodus-3:BoringLecture Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 ../.localized\cf0 \
+	\cf2 ./\cf0 \
+	\cf2 ../RedVelvet/\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:BoringLecture Guest$ ls\
+boring-lecture.html	css			img\
+epicodus-3:BoringLecture Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/BoringLecture/.git/\
+epicodus-3:BoringLecture Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:BoringLecture Guest$ git remote add sz https://github.com/Epicodus-SZ/BoringLecture.git\
+epicodus-3:BoringLecture Guest$ git remote add lh https://github.com/hammmay/BoringLecture.git\
+epicodus-3:BoringLecture Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 boring-lecture.html\cf0 \
+	\cf2 css/\cf0 \
+	\cf2 img/\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:BoringLecture Guest$ git add .\
+epicodus-3:BoringLecture Guest$ git-pair-commit -m "initial boring web page for Boring Oregon"\
+Committing under laura@\
+[master (root-commit) 5f8f7ea] initial boring web page for Boring Oregon\
+ 3 files changed, 17 insertions(+)\
+ create mode 100644 boring-lecture.html\
+ create mode 100644 css/styles.css\
+ create mode 100644 img/sign.jpg\
+epicodus-3:BoringLecture Guest$ git add .\
+epicodus-3:BoringLecture Guest$ git-pair-commit -m "add CSS styles"\
+Committing under laura@\
+[master 4ef36f5] add CSS styles\
+ 1 file changed, 12 insertions(+)\
+epicodus-3:BoringLecture Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:BoringLecture Guest$ git push --set-upstream sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 11, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (11/11), 59.48 KiB | 0 bytes/s, done.\
+Total 11 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/BoringLecture.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from sz.\
+epicodus-3:BoringLecture Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 11, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (11/11), 59.48 KiB | 0 bytes/s, done.\
+Total 11 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/BoringLecture.git\
+ * [new branch]      master -> master\
+epicodus-3:BoringLecture Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'sz/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   boring-lecture.html\cf0 \
+	\cf2 modified:   css/styles.css\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:BoringLecture Guest$ git add .\
+epicodus-3:BoringLecture Guest$ git-pair-commit -m "add div for styling"\
+Committing under laura@\
+[master 60d0dd4] add div for styling\
+ 2 files changed, 5 insertions(+), 10 deletions(-)\
+epicodus-3:BoringLecture Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 536 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/BoringLecture.git\
+   4ef36f5..60d0dd4  master -> master\
+epicodus-3:BoringLecture Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 536 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/BoringLecture.git\
+   4ef36f5..60d0dd4  master -> master\
+epicodus-3:BoringLecture Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir blogging\
+epicodus-3:Desktop Guest$ cd blogging\
+epicodus-3:blogging Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/blogging/.git/\
+epicodus-3:blogging Guest$ git pair lh sz\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:blogging Guest$ git remote add lh https://github.com/hammmay/blogging.git\
+epicodus-3:blogging Guest$ git remote add sz https://github.com/Epicodus-SZ/blogging.git\
+epicodus-3:blogging Guest$ atom .\
+epicodus-3:blogging Guest$ touch index.html\
+epicodus-3:blogging Guest$ mkdir css\
+epicodus-3:blogging Guest$ cd css\
+epicodus-3:css Guest$ touch styles.css\
+epicodus-3:css Guest$ cd ..\
+epicodus-3:blogging Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 css/\cf0 \
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:blogging Guest$ git add.\
+git: 'add.' is not a git command. See 'git --help'.\
+\
+Did you mean this?\
+	add\
+epicodus-3:blogging Guest$ git add .\
+epicodus-3:blogging Guest$ git-pair-commit -m "create initial daily rant"\
+Committing under steve@\
+[master (root-commit) a63044b] create initial daily rant\
+ 2 files changed, 30 insertions(+)\
+ create mode 100644 css/styles.css\
+ create mode 100644 index.html\
+epicodus-3:blogging Guest$ git status\
+On branch master\
+nothing to commit, working directory clean\
+epicodus-3:blogging Guest$ git push lh\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream lh master\
+\
+epicodus-3:blogging Guest$ git push --set-upstream lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 922 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/blogging.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from lh.\
+epicodus-3:blogging Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 922 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/blogging.git\
+ * [new branch]      master -> master\
+epicodus-3:blogging Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   css/styles.css\cf0 \
+	\cf2 modified:   index.html\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:blogging Guest$ git add .\
+epicodus-3:blogging Guest$ git-pair-commit -m "add div styling"\
+Committing under steve@\
+[master 07a0b9b] add div styling\
+ 2 files changed, 26 insertions(+), 6 deletions(-)\
+epicodus-3:blogging Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/hammmay/blogging.git/'\
+epicodus-3:blogging Guest$ hammmay\
+-bash: hammmay: command not found\
+epicodus-3:blogging Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 549 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/blogging.git\
+   a63044b..07a0b9b  master -> master\
+epicodus-3:blogging Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 549 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/blogging.git\
+   a63044b..07a0b9b  master -> master\
+epicodus-3:blogging Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir Epi-Resume\
+epicodus-3:Desktop Guest$ cd Epi-Resume/\
+epicodus-3:Epi-Resume Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/Epi-Resume/.git/\
+epicodus-3:Epi-Resume Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:Epi-Resume Guest$ atom .\
+epicodus-3:Epi-Resume Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 css/\cf0 \
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:Epi-Resume Guest$ git add .\
+epicodus-3:Epi-Resume Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf3 new file:   css/styles.css\cf0 \
+	\cf3 new file:   index.html\cf0 \
+\
+epicodus-3:Epi-Resume Guest$ git-pair-commit -m "Create initial resume site"\
+Committing under steve@\
+[master (root-commit) 4e2d9c2] Create initial resume site\
+ 2 files changed, 38 insertions(+)\
+ create mode 100644 css/styles.css\
+ create mode 100644 index.html\
+epicodus-3:Epi-Resume Guest$ git remote add sz https://github.com/Epicodus-SZ/Eli-Resume.git\
+epicodus-3:Epi-Resume Guest$ git remote add lh https://github.com/hammmay/Eli-Resume.git\
+epicodus-3:Epi-Resume Guest$ git push \
+fatal: No configured push destination.\
+Either specify the URL from the command-line or configure a remote repository using\
+\
+    git remote add <name> <url>\
+\
+and then push using the remote name\
+\
+    git push <name>\
+\
+epicodus-3:Epi-Resume Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:Epi-Resume Guest$ git push --set-upstream sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 1009 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/Eli-Resume.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from sz.\
+epicodus-3:Epi-Resume Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 1009 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/Eli-Resume.git\
+ * [new branch]      master -> master\
+epicodus-3:Epi-Resume Guest$ git add .\
+epicodus-3:Epi-Resume Guest$ git-pair-commit -m "add excellent styling to resume design"\
+Committing under steve@\
+[master 380e1f4] add excellent styling to resume design\
+ 2 files changed, 51 insertions(+), 35 deletions(-)\
+ rewrite index.html (62%)\
+epicodus-3:Epi-Resume Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 556 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/Eli-Resume.git\
+   4e2d9c2..380e1f4  master -> master\
+epicodus-3:Epi-Resume Guest$ hammmay\
+-bash: hammmay: command not found\
+epicodus-3:Epi-Resume Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 556 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/Eli-Resume.git\
+   4e2d9c2..380e1f4  master -> master\
+epicodus-3:Epi-Resume Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir MyFavBand\
+epicodus-3:Desktop Guest$ cd MyFavBand/\
+epicodus-3:MyFavBand Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/MyFavBand/.git/\
+epicodus-3:MyFavBand Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:MyFavBand Guest$ atom .\
+epicodus-3:MyFavBand Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 img/\cf0 \
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:MyFavBand Guest$ git add .\
+epicodus-3:MyFavBand Guest$ git remote -v\
+epicodus-3:MyFavBand Guest$ git remote add sz https://github.com/Epicodus-SZ/MyFavBand.git\
+epicodus-3:MyFavBand Guest$ git remote add lh https://github.com/hammmay/MyFavBand.git\
+epicodus-3:MyFavBand Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf3 new file:   img/al.jpg\cf0 \
+	\cf3 new file:   index.html\cf0 \
+\
+epicodus-3:MyFavBand Guest$ git-pair-commit -m "Initial Weird Al web page"\
+Committing under laura@\
+[master (root-commit) de6b33c] Initial Weird Al web page\
+ 2 files changed, 18 insertions(+)\
+ create mode 100644 img/al.jpg\
+ create mode 100644 index.html\
+epicodus-3:MyFavBand Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:MyFavBand Guest$ git push --set-upstream sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 60.66 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/MyFavBand.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from sz.\
+epicodus-3:MyFavBand Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 60.66 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/MyFavBand.git\
+ * [new branch]      master -> master\
+epicodus-3:MyFavBand Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'sz/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   index.html\cf0 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 css/\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:MyFavBand Guest$ git add .\
+epicodus-3:MyFavBand Guest$ git-pair-commit -m "Add Al-ish styling"\
+Committing under laura@\
+[master b8874e0] Add Al-ish styling\
+ 2 files changed, 21 insertions(+), 2 deletions(-)\
+ create mode 100644 css/styles.css\
+epicodus-3:MyFavBand Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com	\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 604 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/MyFavBand.git\
+   de6b33c..b8874e0  master -> master\
+epicodus-3:MyFavBand Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 604 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/MyFavBand.git\
+   de6b33c..b8874e0  master -> master\
+epicodus-3:MyFavBand Guest$ mkdir reno\
+epicodus-3:MyFavBand Guest$ cd reno\
+epicodus-3:reno Guest$ cd ..\
+epicodus-3:.Trash Guest$ cd ~\
+epicodus-3:~ Guest$ cd /Desktop\
+-bash: cd: /Desktop: No such file or directory\
+epicodus-3:~ Guest$ cd Desktop\
+epicodus-3:Desktop Guest$ mkdir reno\
+epicodus-3:Desktop Guest$ cd reno\
+epicodus-3:reno Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/reno/.git/\
+epicodus-3:reno Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:reno Guest$ atom .\
+epicodus-3:reno Guest$ touch index.html\
+epicodus-3:reno Guest$ mkdir css\
+epicodus-3:reno Guest$ cd css\
+epicodus-3:css Guest$ touch style.css\
+epicodus-3:css Guest$ touch ../img/steve.txt\
+touch: ../img/steve.txt: No such file or directory\
+epicodus-3:css Guest$ mkdir ../img\
+epicodus-3:css Guest$ add .\
+-bash: add: command not found\
+epicodus-3:css Guest$ cd ..\
+epicodus-3:reno Guest$ git add .\
+epicodus-3:reno Guest$ git remote -v\
+epicodus-3:reno Guest$ git remote add lh https://github.com/hammmay/reno.git\
+epicodus-3:reno Guest$ git remote add sz https://github.com/Epicodus-SZ/reno.git\
+epicodus-3:reno Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf3 new file:   css/style.css\cf0 \
+	\cf3 new file:   img/finished-kitchen.jpg\cf0 \
+	\cf3 new file:   img/kitchen-construction.jpg\cf0 \
+	\cf3 new file:   img/old-kitchen.jpg\cf0 \
+	\cf3 new file:   index.html\cf0 \
+\
+epicodus-3:reno Guest$ git-pair-commit -m "Initial renovation web page"\
+Committing under steve@\
+[master (root-commit) d79a5a5] Initial renovation web page\
+ 5 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 css/style.css\
+ create mode 100644 img/finished-kitchen.jpg\
+ create mode 100644 img/kitchen-construction.jpg\
+ create mode 100644 img/old-kitchen.jpg\
+ create mode 100644 index.html\
+epicodus-3:reno Guest$ git push lh\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream lh master\
+\
+epicodus-3:reno Guest$ git push --set-upstream lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 8, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (8/8), 224.50 KiB | 0 bytes/s, done.\
+Total 8 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/reno.git\
+ * [new branch]      master -> master\
+Branch master set up to track remote branch master from lh.\
+epicodus-3:reno Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 8, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (8/8), 224.50 KiB | 0 bytes/s, done.\
+Total 8 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/reno.git\
+ * [new branch]      master -> master\
+epicodus-3:reno Guest$ git staus\
+git: 'staus' is not a git command. See 'git --help'.\
+\
+Did you mean this?\
+	status\
+epicodus-3:reno Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+nothing to commit, working directory clean\
+epicodus-3:reno Guest$ git add .\
+epicodus-3:reno Guest$ git-pair-commit -m "Add column layout"\
+Committing under steve@\
+[master d9dfb98] Add column layout\
+ 3 files changed, 35 insertions(+)\
+ delete mode 100644 css/style.css\
+ create mode 100644 css/styles.css\
+epicodus-3:reno Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 1.07 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/reno.git\
+   d79a5a5..d9dfb98  master -> master\
+epicodus-3:reno Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/Epicodus-SZ/reno.git/'\
+epicodus-3:reno Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 1.07 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/reno.git\
+   d79a5a5..d9dfb98  master -> master\
+epicodus-3:reno Guest$ cd ..\
+epicodus-3:Desktop Guest$ cd RedVelvet\
+epicodus-3:RedVelvet Guest$ gitstatus\
+-bash: gitstatus: command not found\
+epicodus-3:RedVelvet Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'lh/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   index.html\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:RedVelvet Guest$ git add .\
+epicodus-3:RedVelvet Guest$ git-pair-commit -m "Add alt text to images"\
+Committing under laura@\
+[master 8b51f2f] Add alt text to images\
+ 1 file changed, 4 insertions(+), 4 deletions(-)\
+epicodus-3:RedVelvet Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 378 bytes | 0 bytes/s, done.\
+Total 3 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/hammmay/RedVelvet.git\
+   d75c252..8b51f2f  master -> master\
+epicodus-3:RedVelvet Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 378 bytes | 0 bytes/s, done.\
+Total 3 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/Epicodus-SZ/RedVelvet.git\
+   d75c252..8b51f2f  master -> master\
+epicodus-3:RedVelvet Guest$ cd ..\
+epicodus-3:Desktop Guest$ cd MyFavBand/\
+epicodus-3:MyFavBand Guest$ atom .\
+epicodus-3:MyFavBand Guest$ git status\
+On branch master\
+Your branch is up-to-date with 'sz/master'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf2 modified:   css/styles.css\cf0 \
+	\cf2 modified:   index.html\cf0 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+epicodus-3:MyFavBand Guest$ git add .\
+epicodus-3:MyFavBand Guest$ git-pair-commit -m "add sidebar border"\
+Committing under laura@\
+[master d932228] add sidebar border\
+ 2 files changed, 4 insertions(+), 1 deletion(-)\
+epicodus-3:MyFavBand Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 550 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/MyFavBand.git\
+   b8874e0..d932228  master -> master\
+epicodus-3:MyFavBand Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 550 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/MyFavBand.git\
+   b8874e0..d932228  master -> master\
+epicodus-3:MyFavBand Guest$ cd..\
+-bash: cd..: command not found\
+epicodus-3:MyFavBand Guest$ cd ../blogging/d\
+-bash: cd: ../blogging/d: No such file or directory\
+epicodus-3:MyFavBand Guest$ cd ../blogging\
+epicodus-3:blogging Guest$ atom .\
+epicodus-3:blogging Guest$ git add .\
+epicodus-3:blogging Guest$ git-pair-commit -m "add top and bottom margins"\
+Committing under laura@\
+[master e008a9d] add top and bottom margins\
+ 1 file changed, 4 insertions(+), 1 deletion(-)\
+epicodus-3:blogging Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 4, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (4/4), 475 bytes | 0 bytes/s, done.\
+Total 4 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/blogging.git\
+   07a0b9b..e008a9d  master -> master\
+epicodus-3:blogging Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 4, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (4/4), 475 bytes | 0 bytes/s, done.\
+Total 4 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/blogging.git\
+   07a0b9b..e008a9d  master -> master\
+epicodus-3:blogging Guest$ cd ../reno/\
+epicodus-3:reno Guest$ atom .\
+epicodus-3:reno Guest$ atom .\
+epicodus-3:reno Guest$ git add .\
+epicodus-3:reno Guest$ git-pair-commit -m "Add color to column background"\
+Committing under steve@\
+[master 609cb35] Add color to column background\
+ 2 files changed, 14 insertions(+), 2 deletions(-)\
+epicodus-3:reno Guest$ git push sz\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 545 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/reno.git\
+   d9dfb98..609cb35  master -> master\
+epicodus-3:reno Guest$ git push lh\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 545 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/reno.git\
+   d9dfb98..609cb35  master -> master\
+epicodus-3:reno Guest$ cd ../desktop\
+-bash: cd: ../desktop: No such file or directory\
+epicodus-3:reno Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir AnimalShelter\
+epicodus-3:Desktop Guest$ cd AnimalShelter/\
+epicodus-3:AnimalShelter Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/AnimalShelter/.git/\
+epicodus-3:AnimalShelter Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:AnimalShelter Guest$ atom .\
+epicodus-3:AnimalShelter Guest$ git remote -v\
+epicodus-3:AnimalShelter Guest$ git remote add lh https://github.com/hammmay/AnimalShelter.git\
+epicodus-3:AnimalShelter Guest$ git remote add sz https://github.com/Epicodus-SZ/AnimalShelter.git\
+epicodus-3:AnimalShelter Guest$ git remote -v\
+lh	https://github.com/hammmay/AnimalShelter.git (fetch)\
+lh	https://github.com/hammmay/AnimalShelter.git (push)\
+sz	https://github.com/Epicodus-SZ/AnimalShelter.git (fetch)\
+sz	https://github.com/Epicodus-SZ/AnimalShelter.git (push)\
+epicodus-3:AnimalShelter Guest$ touch index.html\
+epicodus-3:AnimalShelter Guest$ mkdir css\
+epicodus-3:AnimalShelter Guest$ mkdir img\
+epicodus-3:AnimalShelter Guest$ touch css/style.css\
+epicodus-3:AnimalShelter Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 css/\cf0 \
+	\cf2 img/\cf0 \
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+epicodus-3:AnimalShelter Guest$ git add .\
+epicodus-3:AnimalShelter Guest$ git-pair-commit -m "add initial files"\
+Committing under laura@\
+[master (root-commit) 5bf8df4] add initial files\
+ 5 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 css/style.css\
+ create mode 100644 img/lemur.jpg\
+ create mode 100644 img/mouse.jpg\
+ create mode 100644 img/penguin.jpg\
+ create mode 100644 index.html\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 8, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (8/8), 547.81 KiB | 0 bytes/s, done.\
+Total 8 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/AnimalShelter.git\
+ * [new branch]      master -> master\
+epicodus-3:AnimalShelter Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:AnimalShelter Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 8, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (8/8), 547.81 KiB | 0 bytes/s, done.\
+Total 8 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/AnimalShelter.git\
+ * [new branch]      master -> master\
+epicodus-3:AnimalShelter Guest$ git add .\
+epicodus-3:AnimalShelter Guest$ git-pair-commit -m "add content to site"\
+Committing under steve@\
+[master fe19668] add content to site\
+ 3 files changed, 47 insertions(+)\
+ delete mode 100644 css/style.css\
+ create mode 100644 css/styles.css\
+epicodus-3:AnimalShelter Guest$ git push lh\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream lh master\
+\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 1.08 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/AnimalShelter.git\
+   5bf8df4..fe19668  master -> master\
+epicodus-3:AnimalShelter Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:AnimalShelter Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 1.08 KiB | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/AnimalShelter.git\
+   5bf8df4..fe19668  master -> master\
+epicodus-3:AnimalShelter Guest$ git add .\
+epicodus-3:AnimalShelter Guest$ git-pair-commit -m "improve CSS styles"\
+Committing under laura@\
+[master 0c91afc] improve CSS styles\
+ 2 files changed, 14 insertions(+)\
+epicodus-3:AnimalShelter Guest$ git push sz\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream sz master\
+\
+epicodus-3:AnimalShelter Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 565 bytes | 0 bytes/s, done.\
+Total 5 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/Epicodus-SZ/AnimalShelter.git\
+   fe19668..0c91afc  master -> master\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 565 bytes | 0 bytes/s, done.\
+Total 5 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/hammmay/AnimalShelter.git\
+   fe19668..0c91afc  master -> master\
+epicodus-3:AnimalShelter Guest$ cd ..\
+epicodus-3:Desktop Guest$ mkdir media-query-practice\
+epicodus-3:Desktop Guest$ cd media-query-practice/\
+epicodus-3:media-query-practice Guest$ git init\
+Initialized empty Git repository in /Users/Guest/Desktop/media-query-practice/.git/\
+epicodus-3:media-query-practice Guest$ git pair sz lh\
+local:  user.name Laura Hamilton and Steve Zaske\
+local:  user.email laura+steve@\
+local:  user.initials lh sz\
+epicodus-3:media-query-practice Guest$ git remote add sz https://github.com/Epicodus-SZ/media-query-practice.git\
+epicodus-3:media-query-practice Guest$ git remote add lh https://github.com/hammmay/media-query-practice.git\
+epicodus-3:media-query-practice Guest$ git status\
+On branch master\
+\
+Initial commit\
+\
+nothing to commit (create/copy files and use "git add" to track)\
+epicodus-3:media-query-practice Guest$ atom .\
+epicodus-3:media-query-practice Guest$ git add .\
+epicodus-3:media-query-practice Guest$ git-pair-commit -m "initial site creation"\
+Committing under steve@\
+[master (root-commit) 2ce7e29] initial site creation\
+ 2 files changed, 19 insertions(+)\
+ create mode 100644 css/styles.css\
+ create mode 100644 media-query-practice.html\
+epicodus-3:media-query-practice Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 865 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/Epicodus-SZ/media-query-practice.git\
+ * [new branch]      master -> master\
+epicodus-3:media-query-practice Guest$ git push lh mater\
+error: src refspec mater does not match any.\
+error: failed to push some refs to 'https://github.com/hammmay/media-query-practice.git'\
+epicodus-3:media-query-practice Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (5/5), 865 bytes | 0 bytes/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To https://github.com/hammmay/media-query-practice.git\
+ * [new branch]      master -> master\
+epicodus-3:media-query-practice Guest$ cd ../AnimalShelter/\
+epicodus-3:AnimalShelter Guest$ atom .\
+epicodus-3:AnimalShelter Guest$ git add .\
+epicodus-3:AnimalShelter Guest$ git-pair-commit -m "add responsive design elements"\
+Committing under laura@\
+[master 31ea1ed] add responsive design elements\
+ 2 files changed, 46 insertions(+), 14 deletions(-)\
+epicodus-3:AnimalShelter Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 753 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/Epicodus-SZ/AnimalShelter.git\
+   0c91afc..31ea1ed  master -> master\
+epicodus-3:AnimalShelter Guest$ git push lh\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream lh master\
+\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 753 bytes | 0 bytes/s, done.\
+Total 5 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/hammmay/AnimalShelter.git\
+   0c91afc..31ea1ed  master -> master\
+epicodus-3:AnimalShelter Guest$ git add .\
+epicodus-3:AnimalShelter Guest$ git-pair-commit -m "fix lemur image width"\
+Committing under laura@\
+[master 2499b35] fix lemur image width\
+ 3 files changed, 4 insertions(+), 4 deletions(-)\
+ create mode 100644 img/lemur2.jpg\
+epicodus-3:AnimalShelter Guest$ git push sz master\
+Username for 'https://github.com': github@zaske.com\
+Password for 'https://github@zaske.com@github.com': \
+Counting objects: 7, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (7/7), 246.83 KiB | 0 bytes/s, done.\
+Total 7 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/Epicodus-SZ/AnimalShelter.git\
+   31ea1ed..2499b35  master -> master\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/hammmay/AnimalShelter.git/'\
+epicodus-3:AnimalShelter Guest$ git push lh master\
+Username for 'https://github.com': hammmay\
+Password for 'https://hammmay@github.com': \
+Counting objects: 7, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (7/7), 246.83 KiB | 0 bytes/s, done.\
+Total 7 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/hammmay/AnimalShelter.git\
+   31ea1ed..2499b35  master -> master\
+epicodus-3:AnimalShelter Guest$ git log\
+\cf4 commit 2499b3574bf08c006ce04a3fbcb7d9ae40ce16bb\cf0 \
+Author: Laura Hamilton and Steve Zaske <laura@>\
+Date:   Wed May 24 16:39:58 2017 -0700\
+\
+    fix lemur image width\
+\
+\cf4 commit 31ea1edb18e98a03eb5c1360fdab3acbd951d786\cf0 \
+Author: Laura Hamilton and Steve Zaske <laura@>\
+Date:   Wed May 24 16:25:20 2017 -0700\
+\
+    add responsive design elements\
+\
+\cf4 commit 0c91afcd184fc096edb2d51a703576b8ca3d00c3\cf0 \
+Author: Laura Hamilton and Steve Zaske <laura@>\
+Date:   Wed May 24 15:07:32 2017 -0700\
+\
+    improve CSS styles\
+\
+\cf4 commit fe19668610b68a289b09736eba596316194594f0\cf0 \
+Author: Laura Hamilton and Steve Zaske <steve@>\
+Date:   Wed May 24 14:57:14 2017 -0700\
+\
+    add content to site\
+\
+\cf4 commit 5bf8df434fadca64638750ecf95fb0a2b38f7472\cf0 \
+Author: Laura Hamilton and Steve Zaske <laura@>\
+Date:   Wed May 24 14:47:48 2017 -0700\
+\
+    add initial files\
+epicodus-3:AnimalShelter Guest$ git add .\
+\
+}
